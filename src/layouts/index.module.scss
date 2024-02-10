@@ -1,0 +1,36 @@
+.MainLayout {
+  .NavBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #1e2126;
+    border-bottom: 2px solid #fefef1;
+
+    img {
+      padding: 12px;
+      height: 50px;
+      margin: 0;
+    }
+
+    .NavigationBtn {
+      display: flex;
+      margin: 0;
+    }
+
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      text-align: center;
+      transition: all 0.3s ease-in-out;
+      height: 50px;
+      padding: 12px;
+    }
+
+    li:hover {
+      background-color: #db3723;
+    }
+  }
+}

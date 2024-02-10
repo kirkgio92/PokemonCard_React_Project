@@ -1,0 +1,10 @@
+.loaderWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+  gap: 12px;
+
+  .loaderGIF {
+    height: 200px;
+  }
+}

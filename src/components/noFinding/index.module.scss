@@ -1,0 +1,10 @@
+.nothingFoundWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+  gap: 12px;
+
+  .nothingFoundIMG {
+    height: 200px;
+  }
+}

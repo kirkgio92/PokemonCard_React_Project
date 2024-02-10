@@ -1,0 +1,16 @@
+.SearchForCards {
+  display: flex;
+  flex-direction: column;
+
+  .formWrapper {
+    margin-top: 24px;
+  }
+
+  .cardList {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 24px;
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+}

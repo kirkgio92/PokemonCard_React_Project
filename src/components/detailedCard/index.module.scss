@@ -1,0 +1,167 @@
+.DetailedCard {
+  display: flex;
+
+  * {
+    margin: 0;
+  }
+
+  .superWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+    padding: 0 12px;
+    width: 100%;
+
+    .imgWrapper {
+      width: 80%;
+
+      img {
+        width: 100%;
+        border-radius: 20px;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+      }
+    }
+
+    .typeImg {
+      height: 30px;
+      border-radius: 100%;
+      box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+      margin: 4px;
+    }
+
+    p {
+      white-space: pre-wrap;
+    }
+
+    .mainWrapper {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 12px;
+      margin: 0 24px 0 24px;
+
+      .headerWrapper {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 12px;
+        border-bottom: 2px solid #fefef1;
+
+        .subtypesWrapper {
+          display: flex;
+        }
+      }
+
+      .hpWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+
+        .typesWrapper {
+          display: flex;
+          align-content: center;
+        }
+      }
+
+      .setWrapper {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        padding-bottom: 12px;
+        border-bottom: 2px solid #fefef1;
+
+        .setNameWrapper {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+
+          .setSymbol {
+            width: 48px;
+          }
+        }
+
+        .setImg {
+          width: 200px;
+        }
+      }
+
+      .attacksWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding-bottom: 12px;
+        border-bottom: 2px solid #fefef1;
+
+        .attackType {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+        }
+
+        .retreat {
+          display: flex;
+          align-items: center;
+        }
+      }
+
+      .pricingWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        .marketsWrapper {
+          display: flex;
+          justify-content: space-between;
+
+          a {
+            text-decoration: underline;
+            transition: color 0.3s ease-in-out;
+
+            &:hover {
+              color: #db3724;
+            }
+          }
+
+          .tcgplayer {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+          }
+
+          .cardmarket {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .superWrapper {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 24px;
+
+    .imgWrapper {
+      margin-bottom: 24px;
+    }
+
+    .mainWrapper {
+      .setWrapper {
+        flex-direction: column;
+        align-items: center;
+      }
+      .pricingWrapper {
+        .marketsWrapper {
+          .cardmarket {
+            align-items: flex-end;
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+}

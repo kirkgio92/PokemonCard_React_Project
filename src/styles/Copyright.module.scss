@@ -1,0 +1,17 @@
+.Copyright {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  .textWrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 24px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .Copyright .textWrapper {
+    margin-top: 86px;
+  }
+}
